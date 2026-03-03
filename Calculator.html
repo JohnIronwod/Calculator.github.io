@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <input type="text" id="equation" placeholder="Enter equation and press Enter">
+
+    <p id="response"></p>
+
+    <script>
+        const input = document.getElementById("equation");
+        const response = document.getElementById("response");
+
+        input.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                response.textContent = "I don't know.";
+            }
+        });
+    </script>
+
+</body>
+</html
